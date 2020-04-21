@@ -1,0 +1,40 @@
+### Create car '1'
+PUT http://localhost:8080/cars/1
+Accept: application/json
+
+### Start car '1'
+POST http://localhost:8080/cars/1/start
+Content-Type: application/json
+
+{}
+
+### Stop car '1'
+POST http://localhost:8080/cars/1/stop
+Content-Type: application/json
+
+{}
+
+### Get all cars
+GET http://localhost:8080/cars/
+Accept: application/json
+
+### Get car '1' log
+GET http://localhost:8080/car/1/history
+Accept: application/json
+
+### Get car '1' start log
+GET http://localhost:8080/car/1/history?type=start
+Accept: application/json
+
+### Get car '1' start count
+GET http://localhost:8080/car/1/history/count?type=start
+Accept: application/json
+
+### Get car '1' stop log
+GET http://localhost:8080/car/1/history?type=stop
+Accept: application/json
+
+### Get car '1' stop count
+GET http://localhost:8080/car/1/history/count?type=stop
+Accept: application/json
+
